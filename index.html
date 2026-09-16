@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pay via GCash</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .qr {
+            width: 260px;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px auto 20px;
+        }
+
+        .recipient {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: #007cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Pay via GCash</h1>
+
+    <p class="subtitle">
+        Scan the QR code to send payment
+    </p>
+
+    <!-- YOUR GCASH QR CODE -->
+    <img
+        src="gcash-qr.png"
+        alt="GCash QR Code"
+        class="qr"
+    >
+
+    <div class="recipient">
+        <strong>Recipient</strong>
+        <br>
+        Your Name Here
+    </div>
+
+    <a
+        class="button"
+        href="https://gcash.com/"
+    >
+        Open GCash
+    </a>
+
+    <div class="instructions">
+        Open GCash → QR → Scan or upload this QR code →
+        Enter the amount → Review → Send.
+    </div>
+
+</div>
+
+</body>
+</html>
